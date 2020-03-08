@@ -1,12 +1,10 @@
-def my_each(array)
-  if array.empty? == false
-    i = 0
-    while i < array.length
-      yield array[i]
-    i += 1
-    end
-  else
-    "No array given!"
+
+
+def my_each(collection)
+  i = 0
+  while i < collection.length
+    yield(collection[i])
+    i = i + 1
   end
-  array
+  collection
 end
